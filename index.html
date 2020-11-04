@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Style.css">
+    <title>Car wash</title>
+</head>
+
+<body>
+    <!--NAV , ENTRADA DE PLACAS Y VISULIACION DE LOS PROCESOS</!-->
+    <nav class="navbar bg-white sticky-top" style="opacity: 90%">
+        <div class="row container-fluid  justify-content-center">
+            <div class="col-5 ">
+                <form class="form-inline" id="formPrincipal">
+                    <label class="sr-only" for="placa">Name</label>
+                    <input type="text" maxlength="7" class="form-control mb-2 mr-sm-2 " id="placa" placeholder="Placa Kuchao">
+                    <button type="submit" value="capturar" class="btn btn-ligth mb-2 mr-2">Registrar</button>
+                    <button type="button" value="mostrar" onclick="" class="btn btn-ligth mb-2 mr-2 " data-toggle="collapse" data-target="#menu-principal" aria-expanded="false"> En proceso</button>
+                </form>
+            </div>
+            <div class="col-6 ">
+                <h1 class="navbar-brand font-italic text1 font-weight-bold " href="#!">Kuchao Wash</h1>
+                <a href=""><img src="image/rayologo.png" alt="rayologo" height="100px"></a>
+            </div>
+            <div class="col-1 ">
+                <output class="text-center" style="background-color: white;border-radius: 5px;padding: 4px;">
+                    <p><b id="writeRecoger">------</b></p>
+                    <button class="btn btn-recoger" id="recoger">Recoger</button>
+                </output>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse   border border-dark p-2 text-center" id="menu-principal" style="max-height: 250px; overflow-y: auto; overflow-x: hidden;">
+            <div class="row">
+                <div class="col">
+                    <p1>Carros registrados</p1>
+                    <h1 id="registrado"></h1>
+                </div>
+                <div class="col">
+                    <p1>Carros en lavado intenso</p1>
+                    <h1 id="lavado"></h1>
+                </div>
+                <div class="col">
+                    <p1>Carros en encerado</p1>
+                    <h1 id="encerado"></h1>
+                </div>
+                <div class="col">
+                    <p1>Carros en secado</p1>
+                    <h1 id="secado"></h1>
+                </div>
+                <div class="col">
+                    <p1>Carros listos</p1>
+                    <h1 id="listo"></h1>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--PROCESOS DEL LAVADO-->
+    <section>
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-12 py-5 d-flex flex-row justify-content-around mate">
+                    <img src="image/mate.png" alt="mate">
+                    <div class="d-flex flex-column justify-content-around" style="padding: 60px;">
+                        <h1 class="font-weight-bold text">Lavado intenso con Mate</h1>
+                        <div class="d-flex justify-content-around ">
+                            <button class="btn btn-ligth " id="lavadoClasico">Clasico</button>
+                            <button class="btn btn-ligth  ">Especial</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 py-5  mate d-flex flex-row justify-content-around">
+                    <div class="d-flex flex-column justify-content-around" style="padding: 60px;">
+                        <h1 class="font-weight-bold text">Encerado con sally</h1>
+                        <div class="d-flex justify-content-around ">
+                            <button class="btn  btn-ligth  " id="enceradoClasico">Clasico</button>
+                            <button class="btn  btn-ligth  ">Especial</button>
+                        </div>
+                    </div>
+                    <img src="image/sally.png" alt="">
+                </div>
+                <div class="col-12 py-5  mate d-flex flex-row justify-content-around">
+                    <img src="image/guido.png" alt="">
+                    <div class="d-flex flex-column justify-content-around" style="padding: 60px;">
+                        <h1 class="font-weight-bold text">Secado interno con guido</h1>
+                        <div class="d-flex justify-content-around ">
+                            <button class="btn btn-ligth " id="secadoClasico">Especial</button>
+                            <button class="btn  btn-ligth ">Clasico</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/script2.js"></script></!-->
+    <script src="js/script3.js"></script>
+</body>
+
+</html>

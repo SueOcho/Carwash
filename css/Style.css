@@ -1,0 +1,66 @@
+body {
+    background-color: white;
+}
+
+
+.btn-ligth {
+    color: yellow;
+    border-radius: 10px;
+    border: 2px double #343a40;
+    background-color: black;
+    padding: 10px 16px;
+}
+
+.bg-white {
+    background-color: yellow !important;
+}
+
+.text {
+    background-color: black;
+    color: yellow;
+    border: 2px solid #343a40;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.text1 {
+    color: black;
+    font-size: 2.8rem;
+
+}
+
+.mate {
+
+
+    background-image: url('../image/fondo1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    "
+background-color: black;
+}
+
+.btn-ligth:hover {
+    background-color: black;
+    color: white;
+    border-color: yellow;
+    box-shadow: 2px 2px 5px yellow;
+
+}
+
+
+#menu-principal {
+    background-color: white;
+}
+
+.btn-recoger {
+    border-color: yellow;
+    color: white;
+    border-radius: 7px;
+    background-color: black;
+    padding: 5px 8px;
+}
+
+
+/*Estilos del diseño*/
